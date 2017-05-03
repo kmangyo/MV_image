@@ -142,6 +142,7 @@ for (i in 1:nrow(face_w_pst)){
       y > face_w_pst[i,4] & y < face_w_pst[i,4]+face_w_pst[i,6])
 }
 
+# I have tried to make the groups of faces using API, but the results are not good enough.
 facegroupURL = "https://westus.api.cognitive.microsoft.com/face/v1.0/group"
 faceIds = list(faceIds = as.character(face$value))
 
